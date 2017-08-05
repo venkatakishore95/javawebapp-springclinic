@@ -4,13 +4,17 @@ pipeline {
 	stages {
 		stage('Build'){
 			steps{
-				echo 'Building'
+				echo 'Building and Packaging ...'
+				sh 'mvn clean package'
+				echo 'Packaging done'
 				}
 			}
 		
 		stage('Deploying'){
 			steps{
-				echo 'Deploying'
+				echo 'Deploying to tomcat'
+				sh 'scp  /var/lib/jenkins/workspace/PET_Clinic/target/petclinic.war  root@52.29.22.138:/opt/tomcat/webapps'
+				echo 'Deployed'
 				}
 			}
 
