@@ -13,7 +13,6 @@ pipeline {
 				sh 'mvn clean package'
 				echo 'Packaging done'
 				
-				sh 'mvn sonar:sonar'
 				}
 			}
 		
@@ -37,12 +36,14 @@ pipeline {
 				}
 			}
 		
-		/*stage('SonarQube analysis') {
-    			withSonarQubeEnv('My SonarQube Server') {
-      				// requires SonarQube Scanner for Maven 3.2+
-      				sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
-  				  }
-			}*/
+		stage('Analyze') {
+			echo " ScannerHome= ${scannerHome}"
+      // Run SonarQube analysis
+      def scannerHome = tool 'Sonar-scanner 2.8';
+      withSonarQubeEnv('sonarqube.test.com') {
+        sh "${scannerHome}/bin/sonar-scanner"
+      }
+    }
 		
 		}
 	}
