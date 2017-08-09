@@ -21,7 +21,7 @@ pipeline {
 				echo 'Deploying to tomcat'
 				
 				echo "JEN ==>${env.JENKINS_HOME} ... pjt ==> ${env.JOB_NAME} "
-				sh 'scp  ${env.JENKINS_HOME}/workspace/${env.JOB_NAME}/target/petclinic.war  root@52.29.22.138:/opt/tomcat/webapps'
+				sh "scp  ${env.JENKINS_HOME}/workspace/${env.JOB_NAME}/target/petclinic.war  root@52.29.22.138:/opt/tomcat/webapps"
 				echo 'Deployed'
 				}
 			}
