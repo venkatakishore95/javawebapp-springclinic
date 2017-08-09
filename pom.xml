@@ -349,6 +349,14 @@
 				<artifactId>spring-tx</artifactId>
 				<version>${spring-framework.version}</version>
 			</dependency>
+			<!-- For Unit testing -->
+			<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+			</dependency>
+			<!-- Unit testing end -->
 		</dependencies>
 	</dependencyManagement>
 
