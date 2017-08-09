@@ -38,7 +38,7 @@ pipeline {
 		
 		stage('Analyze') {
 			steps{
-			echo " ScannerHome= ${scannerHome}"
+			//echo " ScannerHome= ${scannerHome}"
       // Run SonarQube analysis
       //def scannerHome = tool 'Sonar-scanner 2.8';
       withSonarQubeEnv('sonarqube.test.com') {
