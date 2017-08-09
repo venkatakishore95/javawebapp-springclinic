@@ -12,6 +12,8 @@ pipeline {
 				echo 'Building and Packaging ...'
 				sh 'mvn clean package'
 				echo 'Packaging done'
+				
+				sh 'mvn sonar:sonar'
 				}
 			}
 		
