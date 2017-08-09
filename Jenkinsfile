@@ -19,6 +19,9 @@ pipeline {
 		stage('Deploying'){
 			steps{
 				echo 'Deploying to tomcat'
+				JENKINS_HOME=${env.JENKINS_HOME}
+				PROJECT_NAME=${env.JOB_NAME}
+				echo "JEN ==> JENKINS_HOME... pjt ==> PROJECT_HOME"
 				sh 'scp  ${env.JENKINS_HOME}/workspace/${env.JOB_NAME}/target/petclinic.war  root@52.29.22.138:/opt/tomcat/webapps'
 				echo 'Deployed'
 				}
