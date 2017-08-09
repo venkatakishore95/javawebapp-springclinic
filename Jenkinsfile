@@ -42,7 +42,7 @@ pipeline {
       // Run SonarQube analysis
       //def scannerHome = tool 'Sonar-scanner 2.8';
       withSonarQubeEnv('sonarqube.test.com') {
-        sh "${scannerHome}/bin/sonar-scanner"
+       // sh "${scannerHome}/bin/sonar-scanner"
 	      
 	      //https://github.com/Sidd2405/sample_project/blob/master/Jenkinsfile
       } }
