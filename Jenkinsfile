@@ -5,13 +5,10 @@ pipeline {
 	stages {
 		stage('Building'){
 			steps{
-				echo "======================================="
-   echo "JENKINS_HOME = ${env.JENKINS_HOME}"
-   echo "JOB_NAME = ${env.JOB_NAME}"
-   echo "REPO_GIT = " + REPO_GIT
-   echo "DEFAULT_GIT_BRANCH = "+ DEFAULT_GIT_BRANCH
-   echo "SONAR_SERVER = "+ SONAR_SERVER
-   echo "======================================="
+				
+   				echo "JENKINS_HOME = ${env.JENKINS_HOME}"
+   				echo "JOB_NAME = ${env.JOB_NAME}"
+   
 				echo 'Building and Packaging ...'
 				sh 'mvn clean package'
 				echo 'Packaging done'
