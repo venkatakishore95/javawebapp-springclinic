@@ -40,7 +40,7 @@ pipeline {
 			steps{
 			echo " ScannerHome= ${scannerHome}"
       // Run SonarQube analysis
-      def scannerHome = tool 'Sonar-scanner 2.8';
+      //def scannerHome = tool 'Sonar-scanner 2.8';
       withSonarQubeEnv('sonarqube.test.com') {
         sh "${scannerHome}/bin/sonar-scanner"
 	      
