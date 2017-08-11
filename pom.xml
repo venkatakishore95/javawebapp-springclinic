@@ -454,6 +454,19 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	
+	<!-- Maven-Nexus Integration -->
+	
+ 
+<distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://52.29.118.82:8081/nexus/content/repositories/snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
+ 
+	<!-- Maven-Nexus Integration - End -->
 
 	<url>demopetclinic</url>
 </project>
