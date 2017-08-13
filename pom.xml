@@ -459,12 +459,12 @@
 	<!-- Maven-Nexus Integration -->
 	
  
-<distributionManagement>
+<!-- <distributionManagement>
    <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://52.29.118.82:8081/repository/maven-snapshots/</url>
    </snapshotRepository>
-</distributionManagement>
+</distributionManagement> -->
  
 	<!-- Maven-Nexus Integration - End -->
 
