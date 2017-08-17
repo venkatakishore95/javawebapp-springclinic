@@ -17,7 +17,7 @@
                                         title="trigger a RuntimeException to see how it is handled"><i
                     class="icon-warning-sign"></i> Error</a></li>
             <li style="width: 80px;"><a href="mailto:prajeesh.cheruvath@accenture.com?Subject=Query%20Regarding%20Pet%20Application" target="_top" 
-					<i class="fa fa-envelope"</i></i>Email</a></li>
+					<i class="fa fa-envelope"></i>Email</a></li>
         </ul>
     </div>
 </div>
