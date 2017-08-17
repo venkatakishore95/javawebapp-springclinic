@@ -16,7 +16,8 @@
             <li style="width: 90px;"><a href="<spring:url value="/oups.html" htmlEscape="true" />"
                                         title="trigger a RuntimeException to see how it is handled"><i
                     class="icon-warning-sign"></i> Error</a></li>
-            <li style="width: 80px;"><a href="mailto:prajeesh.cheruvath@accenture.com?Subject=Query%20Regarding%20Pet%20Application" target="_top" </i>Email</a></li>
+            <li style="width: 80px;"><a href="mailto:prajeesh.cheruvath@accenture.com?Subject=Query%20Regarding%20Pet%20Application" target="_top" 
+					<i class="icon-question-sign"></i></i>Email</a></li>
         </ul>
     </div>
 </div>
